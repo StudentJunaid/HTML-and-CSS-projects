@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+<nav>
+    <div class="logo">
+        <h1>logo</h1>
+    </div>
+        <ul id="navList">
+            <li><a href="">Home</a></li>
+            <li><a href="">about</a></li>
+            <li><a href="">service</a></li>
+            <li><a href="">contact</a></li>
+            <li><a href="">Here we</a></li>
+        </ul>
+        <div class="icon">
+            <i class="fa-solid fa-bars" onclick="openBar()"></i>
+        </div>
+    
+</nav>
+
+    <script>
+
+
+      let navList = document.getElementById("navList");
+      navList.style.maxHeight = "0px"
+      function openBar(){
+        if(navList.style.maxHeight == "0px"){
+            navList.style.maxHeight = "300px"
+        }else{
+            navList.style.maxHeight = "0px"
+        }
+      }
+
+
+
+
+    </script>
+  </body>
+</html>
